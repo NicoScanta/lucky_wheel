@@ -6,11 +6,34 @@
     <title>Sample HTML Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="body">
     
-    <p>Hello, World!</p>
+    <div class="centered">
+        <div class="page">
+            
+            <div class="centered">
+                <img src="img/logo.png" height="120" width="120" alt="Logo"> 
+            </div>
+            <div class="container">
 
+                <div class="input-container">
+                    <label for="code">Inserisci il codice:</label>
+                    <input type="text" id="code" name="code" placeholder="12ER78">
+                </div>
 
-    
+                <button class="btn-ok" id="confirm">OK</button>
+
+            </div>
+
+            <div class="footer">
+                <img src="img/gerry.png" alt="ZIO GERRY" class="reveal"> 
+                <p class="footer-text"> "tutti i diritti riservati a Mediaset s.p.a"</p>
+            </div>
+        
+        </div>
+    </div>
+
 </body>
 </html>
+
+<script src="script.js"></script>

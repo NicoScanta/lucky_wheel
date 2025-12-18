@@ -1,0 +1,137 @@
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to top right,
+    #000000,
+    #0066ff
+  );
+}
+
+.page {
+  width: 360px;
+  height: 640px; /* stile telefono */
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  position:relative;
+}
+
+/* Footer in basso a sinistra */
+.footer {
+  position: absolute;
+  bottom: 10px;   /* distanza dal bordo inferiore */
+  left: 10px;     /* distanza dal bordo sinistro */
+  display: flex;
+  align-items: flex-end; 
+  gap: 8px;       /* spazio tra immagine e testo */
+}
+
+/* Testo del footer */
+.footer-text {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Immagine Gerry */
+.footer img {
+  width: 50px;     /* dimensione immagine */
+  height: auto;
+  filter: brightness(0.7);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-container label {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-container input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+img.reveal {
+  
+  bottom: 0;
+  left: -10px;
+  width: 200px;   /* puoi cambiare dimensione */
+  height: auto;
+  filter: brightness(0.7); /* scuro */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+
+img {
+  filter: brightness(0.7); /* 0.7 = leggermente scuro, 0.5 = più scuro */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-ok {
+  padding: 12px 24px;                 /* dimensione bottone */
+  border: none;                        /* niente bordo */
+  border-radius: 12px;                 /* angoli arrotondati */
+  background: linear-gradient(45deg, #0066ff, #00ccff); /* gradiente */
+  color: white;                        /* testo bianco */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;           /* animazioni hover */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-ok:hover {
+  transform: translateY(-2px);         /* effetto “sollevato” */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg, #00ccff, #0066ff); /* sfumatura inversa */
+}
+
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0;
+}
+
+/* opzionale: piccolo ritardo */
+.reveal:nth-child(1) { animation-delay: 0.2s; }
+.reveal:nth-child(2) { animation-delay: 0.4s; }
+
+@keyframes slideUpFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
