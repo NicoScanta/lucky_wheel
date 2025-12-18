@@ -23,7 +23,7 @@ body {
 .footer {
   position: absolute;
   bottom: 10px;   /* distanza dal bordo inferiore */
-  left: 10px;     /* distanza dal bordo sinistro */
+  left: -30px;     /* distanza dal bordo sinistro */
   display: flex;
   align-items: flex-end; 
   gap: 8px;       /* spazio tra immagine e testo */
@@ -32,8 +32,25 @@ body {
 /* Testo del footer */
 .footer-text {
   color: white;
-  font-size: 12px;
+  font-size: 8px;
   margin: 0;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  display: none;
+  
+}
+
+.container p:first-child {
+    color: white;               /* testo bianco */
+    font-size: 30px;            /* dimensione leggibile */
+    font-weight: bold;          /* grassetto */
+    text-transform: uppercase;  /* tutto maiuscolo */
+    letter-spacing: 1px;        /* leggero spazio tra lettere */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* piccolo effetto ombra */
+    margin: 0 0 4px 0;          /* margine sotto per separare dal footer-text */
 }
 
 /* Immagine Gerry */
@@ -72,7 +89,7 @@ body {
 img.reveal {
   
   bottom: 0;
-  left: -10px;
+  left: -20px;
   width: 200px;   /* puoi cambiare dimensione */
   height: auto;
   filter: brightness(0.7); /* scuro */
