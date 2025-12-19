@@ -14,7 +14,7 @@ TEXT = ["Bancarotta! non è cambiato nulla alla fine!",
         " ", 
         "Hai già troppi orologi ", 
         " ",
-        "Vengono rilasciati solo in buoni tigotà",
+        " ",
         "Non sarà una macchina da cucire industriale ma nulla di niente",
         " ",
         "HAI VINTO! 2000 EURO SI VA IN VACANZA!",
@@ -36,7 +36,7 @@ spinBtn.addEventListener("click", () => {
         case "M32453": spin = 700; lose.innerText = TEXT[4]; break; // matilde
         case "343G8B": spin = 799; lose.innerText = TEXT[5]; break; // giorgia
         case "LL1234": spin = 1345; lose.innerText = TEXT[6]; break; // gabriele
-        case "CAA890": spin = 1445; win.innertext = TEXT[7]; break; // adriana 2000
+        case "CAA890": spin = 1445; win.innerText = TEXT[7]; break; // adriana 2000
         case "YGD839": spin = 850; lose.innerText = TEXT[8]; break; // daria
         case "789M23": spin = 680; lose.innerText = TEXT[9];break;  // marco
         case "21SN23": spin = 600; lose.innerText = TEXT[10]; break; // mi
@@ -56,7 +56,8 @@ spinBtn.addEventListener("click", () => {
 
 
 wheel.addEventListener("transitionend", () => {
-    if(win.innerText != ""){
+
+    if(win.innerText != null){
      win.style.display = "block";
      launchConfetti(); 
     } else {
