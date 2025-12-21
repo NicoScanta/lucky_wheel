@@ -27,11 +27,6 @@ TEXT = ["Riprova!",
         "Hai vinto il regalo con il simbolo: 💕"] // nicolo
 
 
-function lose_(){
-    spin = 1457;
-}
-
-
 function lele(){
     wheel.src = "img/lele_wheel.png";
     win.innerText = TEXT[4];
@@ -46,7 +41,7 @@ function bankrupt(){
         case 0: spin = 1009; lose.innerText = TEXT[0]; numbers_spin++; break; // skip
         case 1: spin = 1982; lose.innerText = TEXT[0];numbers_spin++;break; // skip
         case 2: spin = 3779; lose.innerText = TEXT[0];numbers_spin++;break; //skip
-        default: spin = 12149; lose.innerText = TEXT[1];numbers_spin++; spinBtn.style.display = "none"; break; // bankrupt
+        default: spin = 12149; lose.innerText = TEXT[1];numbers_spin++; no_show_button = true; break; // bankrupt
     }
 
 }
